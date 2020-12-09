@@ -1,0 +1,29 @@
+languageCode = "en-us"
+title = "Gudang Code"
+baseurl = "https://gudangcode.com/"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "danatheme"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "Gudang Code"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "UA-80517197-1" 
+
+# Untuk deskripsi tag meta di homepage
+description = "Blog Programmer pengguna Linux"
+
+# Biodata Author
+[author]
+    name = "Adi Yudana"
+    homepage = "https://twitter.com/adiyudanaid"
+    bio = "Ahli Surga"
+    image = "https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg"
+
+[permalinks]
+    posts = "/:slug/"
