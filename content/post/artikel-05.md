@@ -1,8 +1,8 @@
 ---
-date  : {{ .Date }}
-title : "{{ replace .TranslationBaseName "-" " " | title }}"
-slug  : {{ .BaseFileName }}
-draft : true
+date: 2020-12-10T11:00:34+07:00
+title: "Tutorial CRUD dengan PHP & MySQL"
+slug: tutorial-crud-php
+draft: false
 
 tags:
     - tags
