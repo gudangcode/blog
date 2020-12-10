@@ -10,7 +10,7 @@ themesDir = "themes"
 theme = "danatheme"
 
 # Shortname disqus, silahkan sesuaikan
-DisqusShortname = "Gudang Code"
+DisqusShortname = "petanikode"
 
 # Untuk Google Analytic, silahkan sesuikan
 googleAnalytics = "UA-80517197-1" 
@@ -21,9 +21,9 @@ description = "Blog Programmer pengguna Linux"
 # Biodata Author
 [author]
     name = "Adi Yudana"
-    homepage = "https://twitter.com/adiyudanaid"
-    bio = "Ahli Surga"
-    image = "https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg"
+    homepage = "https://adiyudana.com"
+    bio = "Founder Gudang Code"
+    image = "/img/adi-yudana.jpg"
 
 [permalinks]
-    post = "/:slug/"
+    blog = "/:slug/"

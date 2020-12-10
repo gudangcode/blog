@@ -5,7 +5,8 @@ slug: tutorial-crud-php
 draft: false
 
 tags:
-    - tags
+    - Tutorial
+    - Php
 
 categories:
     - category

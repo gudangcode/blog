@@ -4,7 +4,9 @@ title: "Cara Menambahkan Artikel di Web Hugo Indonesia"
 slug: artikel-hugo-indonesia
 
 tags:
-    - Python
+    - Tutorial  
+    - Hugo
+    - Go
 
 categories:
     - Pemrograman

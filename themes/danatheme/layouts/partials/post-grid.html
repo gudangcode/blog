@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
 
-            {{ $paginator := .Paginate (where .Pages "Type" "post") 6 }}
+            {{ $paginator := .Paginate (where .Pages "Type" "blog") 6 }}
             {{ range $paginator.Pages }}
             <div class="col-md-4 mb-4 d-flex">
                 <div class="card">
