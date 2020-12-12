@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Gudang Code"
-baseurl = "https://gudangcode.com/"
+baseurl = "https://www.gudangcode.com/"
 
 # Agar front-matter pakai format YAML
 MetaDataFormat = "yaml"
