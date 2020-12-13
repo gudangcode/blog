@@ -1,130 +1,69 @@
 ---
 date: 2020-12-09T21:46:23+07:00
-title: "Cara Menambahkan Artikel di Web Hugo Indonesia"
-slug: artikel-hugo-indonesia
+title: "Source Code Program Aplikasi Rapor dan Nilai Siswa Sekolah kurikulum 2013"
+slug: aplikasi-rapor-dan-nilai-siswa-sekolah-kurikulum-2013
 
 tags:
-    - Tutorial  
-    - Hugo
-    - Go
+    - Source Code 
+    - Aplikasi
+    - PHP
 
 categories:
-    - Pemrograman
+    - Source Code
 
-
+featured_image : https://1.bp.blogspot.com/-Nb-2ANb8_zw/X9JZi6_fQuI/AAAAAAAAABY/5WIZyA0W5h0wRhngwunTq09YJLOGgQZBwCNcBGAsYHQ/s16000/default.png
 image: https://1.bp.blogspot.com/-fVeQ0KhX5ks/X9Gh47jb03I/AAAAAAAAAVQ/DrSYMpbq7SgOcFWZxG4vuNt_w7xAIIbEACLcBGAsYHQ/s16000/artikel%2B5.png
 thumbnail: https://1.bp.blogspot.com/-fVeQ0KhX5ks/X9Gh47jb03I/AAAAAAAAAVQ/DrSYMpbq7SgOcFWZxG4vuNt_w7xAIIbEACLcBGAsYHQ/s16000/artikel%2B5.png
 ---
 <!-- @TODO: lengkapi gambar screenshot -->
 
-Ayo tambahkan artikelmu ke Hugo Indonesia agar mudah ditemukan. Hugo Indonesia
-adalah komunitas pengguna dan pengembang Hugo, jadi pastikan artikelmu membahas
-tentang Hugo atau masih related dengan Hugo.
+[Gudangcode.com](https://www.gudangcode.com) – Source Code Program Aplikasi Rapor dan Nilai Siswa Sekolah kurikulum 2013 berbasis web. Source code ini dibangun dengan menggunakan bahasa pemrograman PHP, database MySQL dan framework Codeigniter (CI). PHP merupakan bahasa pemrograman server side scripting. Dengan kata lain semua proses eksekusi kode program dilakukan pada sisi server bukan pada sisi klien. Codeigniter merupakan salah satu framework pada bahasa PHP yang sangan populer. Codeigniter menerapkan konsep MVC (Model, view dan Controller). Selain user interface dari aplikasi rapor dan nilai siswa sekolah berbasis web ini menggunakan library bootstrap.
 
-Berikut ini cara menambahkannya:
+Aplikasi rapor dan nilai siswa kurikulum 2013 berbasis web ini memiliki berbagai fitur dan fasilitas yang menarik serta menunjang kegiatan penyediaan infromasi nilai rapor siswa. Hak aksesnya sendiri pada aplikasi ini terdiri dari 3 level akses, yaitu administrator, guru dan siswa, setiap level akses tentunya mempunyai hak akses yang berbeda juga.
 
-## Step 1 -- Fork dan Clone Repository
+### Source Code Program Aplikasi Rapor dan Nilai Siswa Sekolah kurikulum 2013
+Fitur yang tersedia pada aplikasi ini meliputi pengelolaan data siswa, data guru, data mata pelajaran, data ekstra kurikuler, data kelas, data wali kelas, informasi nilai dan cetak nilai atau rapor, pengelolaan nilai siswa, siswa berprestasi, catatan kenaikan kelas, cetak leger dan lain sebagainya.
 
-Silahkan buka https://github.com/gohugoid/gohugoid-web lalu klik **Fork**.
+ 
 
-![Fork Repository Web Hugo Indonesia](/img/artikel-hugo-indonesia/fork.png)
+Proses Instalasi aplikasi ini sangat mudah, Setelah source code berhasil terunduh, kemudian ekstrak pada local server XAMPP atau dalam folder htdocs, selanjutnya buat database baru dengan nama db_raport, kemudian import berkas db_raport2013.sql yang ada di dalam folder db ke dalam database yang barusan kamu buat. Untuk menyesuaikan konfigurasi koneksi database terdapat pada berkas database.php yang berada di direktori application\config.
 
-Maka sekarang kamu punya repository `gohugoid-web` yang merupakan hasil fork dari repository Hugo Indonesia.
-
-Ambil URL repo tersebut:
-
-![Copy URL Repo](/img/artikel-hugo-indonesia/repo-url.png)
-
-Kemudian lakukan clone dengan perintah:
-
-```bash
-git clone git@github.com:ardianta/gohugoid-web.git
+```php
+‘hostname’ => ‘localhost’,
+‘username’ => ‘root’,
+‘password’ => ”,
+‘database’ => ‘db_raport2013’,
+‘dbdriver’ => ‘mysqli’,
+‘dbprefix’ => ”,
 ```
 
-> **Perhatikan**: alamat repo bisa berbeda-beda, tergantung dari username github milikmu. Pada contoh ini digunakan username `ardianta`. Gunakanlah alamat repo yang kamu fork sendiri.
+Sesuaikan konfigurasi dengan setelan yang kamu gunakan, setelah itu buka web browser dan masukan url localhost/rapor2013/. Kamu juga dapat menggunakan akun-akun berikut untuk dapat masuk ke dalam aplikasi sesuai dengan role yang digunakan.
+```code
+Akun Administrator
+Username : admin
+Password : super90
 
-Sekarang kamu sudah punya repo `gohugoid-web` di komputermu. Pastikan kamu sudah menginstal Hugo di komputermu.
+Akun Guru
+Username : budi
+Password : 123
 
-Silahkan buka repo tersebut dengan teks editor, direkomendasikan menggunakan VS Code.
-
-## Step 2 -- Tambahkan Artikel Baru
-
-Gunakan perintah berikut untuk menambahkan artikel baru:
-
-```bash
-hugo new post/slug-artikel.md
+Akun Siswa
+Username : 101
+Password : 101
 ```
+Jika kalian masih bingung dengan proses instalasinya kalian dapat menonton video tutorialnya disini.
 
-Untuk slug artikel, pastikan tidak menggunakan slug yang sudah ada agar tidak terjadi bentrok. Gunakan slug yang unik.
 
-Jika artikel yang ditambahkan dari website milikmu, slug bisa diberikan dengan nama author atau websitemu lalu mengikuti judul artikel.
+UNDUH SOURCE CODE [ VIA GOOGLE DRIVE ](https://drive.google.com/file/d/1XVsFuzekK1aJBFcbQiyET6B3ayltidzh/view?usp=sharing)
 
-Contoh:
+UNDUH DATABASE [ VIA GOOGLE DRIVE ](https://drive.google.com/file/d/1PMD5XOd9-9oFZ6_p7IdLP6F8KSq1UoaF/view?usp=sharing)
 
-```bash
-hugo new post/budi-belajar-hugo.md
-```
+[DEMO](https://youtube.com) 
 
-Setelah itu, isilah parameter di frontmatter dengan benar.
-Kamu juga bisa mencontek contoh konten yang sudah ada.
 
-![mengisi front matter](/img/artikel-hugo-indonesia/mengisi-front-matter.png)
+Pastikan kalian mendownload keduanya yaitu source code dan databasenya. Semoga postingan saya kali ini bermanfaat buat kalian semua. Kalian juga bebas untuk mengembangkan sehingga menjadi lebih baik lagi. Apabila ada kendala dalah aplikasi dapat menghubungi saya melalui kolom komentar.
 
-<!-- @TODO: Lengkapi tulisan -->
 
-Jika artikel yang kamu tambahkan bukan external post, maka parameter `external_url` tidak perlu diisi dan silahkan tuliskan kontennya di bagian konten.
-
-## Step 3 -- Push
-
-Sebelum melakukan push, cek dulu apakah artikel yang kamu tambahkan sudah benar. Jalankan server Hugo untuk mengeceknya.
-
-```bash
-hugo server
-```
-
-Setelah yakin..
-
-Lakukan commit dengan perintah:
-
-```bash
-git add .
-git commit -m "Menambahkan artikel: <judul artikel>"
-```
-
-Setelah itu, lakukan push ke repo hasil fork milikmu.
-
-```bash
-git push --all
-```
-
-<!-- @TODO: Lengkapi tulisan -->
-
-## Step 4 -- Pull-request
-
-Buka kembali repo Github hasil fork di profilmu. Di sana akan ada tombol untuk melakukan pull-request.
-
-![pull request](/img/artikel-hugo-indonesia/pull-request.png)
-
-Klik tombol tersebut untuk melakukan pull-request.
-
-Berikutnya, kita akan diperlihatkan perubahan yang sudah dilakukan. Klik tombol **Create Pull Request** untuk memulai membuat pull request.
-
-![create pull request](/img/artikel-hugo-indonesia/create-pull-request.png)
-
-Terakhir, isi judul dan deskripsi pull-request. Setelah itu klik tombol **Create pull request**.
 
 ![pull request title](/img/artikel-hugo-indonesia/pull-request-title.png)
 
-<!-- @TODO: Lengkapi tulisan -->
-
-## Step 5 -- Selesai
-
-Selamat 🎉
-
-Kamu sudah menambahkan artikel baru di Web Hugo Indonesia. Tinggal tunggu review dari admin. Jika Pull-request yang kamu ajukan di-merge, maka artikel akan ditambahkan.
-
-Jika ada pertanyaan, bisa disampaikan melalui [Github Issue](https://github.com/gohugoid/gohugoid-web/issues) repo ini atau [Group Telegram Hugo Indonesia](https://t.me/gohugoid/).
-
-Selamat berkontribusi.
-
-<!-- @TODO: Lengkapi tulisan -->
